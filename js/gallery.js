@@ -89,7 +89,6 @@ function swapPhotoBack(){
 var mCurrentIndex = 0;
 
 // XMLHttpRequest variable
-var mUrl = "images.json";
 var mRequest = new XMLHttpRequest();
 mRequest.onreadystatechange = function() {
 	// Do something interesting if file is opened successfully
