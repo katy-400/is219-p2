@@ -46,6 +46,7 @@ function getQueryParams(qs) {
 var $_GET = getQueryParams(document.location.search);
 console.log($_GET["json"]); // would output "John"
 
+var mUrl = "images.json";
 if ($_GET["json"] != undefined){
 	mUrl = $_GET["json"];
 }
