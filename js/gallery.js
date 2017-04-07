@@ -101,7 +101,7 @@ function GalleryImage(imgLocation, description, date, imgPath) {
 
 
 //XMLHttpRequest
-var mUrl = “images.json”;
+var mUrl = "images.json";
 var mRequest = new XMLHttpRequest();
 mRequest.onreadystatechange = function() {
 	// Do something interesting if file is opened successfully
