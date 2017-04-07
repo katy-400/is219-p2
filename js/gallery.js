@@ -46,6 +46,10 @@ function getQueryParams(qs) {
 var $_GET = getQueryParams(document.location.search);
 console.log($_GET["json"]); // would output "John"
 
+if ($_GET["json"] != undefined){
+	mUrl = $_GET["json"];
+}
+
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	//Access the img element and replace its source
