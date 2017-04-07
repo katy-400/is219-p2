@@ -61,11 +61,25 @@ function swapPhoto() {
 	document.getElementById("photo").src = curImg.imgPath;
 	document.getElementsByClassName("location")[0].innerHTML = "Location: " + curImg.imgLocation;
 	document.getElementsByClassName("description")[0].innerHTML = "Description: " + curImg.description;
-	document.getElementsByClassName("date")[0].innerHTML = "Date" + curImg.date;
+	document.getElementsByClassName("date")[0].innerHTML = "Date: " + curImg.date;
 	
 	console.log('swap photo');
 }
 
+function swapPhotoBack(){
+	mCurrentIndex--;
+	if(mCurrentIndex < 0){
+		mCurrentIndex = (mImages.length)-1;
+	}
+	var curImg = mImages[mCurrentIndex];
+	console.log("SWAP BACK: " + curImg.imgPath);
+	document.getElementById("photo").src = curImg.imgPath;
+	document.getElementsByClassName("location")[0].innerHTML = "Location: " + curImg.imgLocation;
+	document.getElementsByClassName("description")[0].innerHTML = "Description: " + curImg.description;
+	document.getElementsByClassName("date")[0].innerHTML = "Date: " + curImg.date;
+	
+	console.log('swap photo back');
+}
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
