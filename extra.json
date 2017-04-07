@@ -1,0 +1,28 @@
+{
+    "images": [
+        {
+            "imgPath":"img/places/summer.jpg",
+            "imgLocation": "NJIT",
+            "description": "Sunset over Newark",
+            "date": "09/05/2014"
+        },
+        {
+            "imgPath": "http://placehold.it/518x389?text=index+1",
+            "imgLocation": "Second image (index 1)",
+            "description": "This is the 2nd image in the set",
+            "date": "02/01/2016"
+        },
+        {
+            "imgPath": "http://placehold.it/518x389?text=index+2",
+            "imgLocation": "Third image (index 2)",
+            "description": "This is the 3rd image in the set",
+            "date": "03/01/2016"
+        },
+    {
+      "imgPath": "http://placehold.it/518x389?text=index+3",
+      "imgLocation": "Fourth image (index 3)",
+      "description": "This is the 4th image in the set",
+      "date": "04/01/2016"
+    }
+  ]
+}
