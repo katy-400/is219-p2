@@ -37,6 +37,17 @@ function swapPhoto() {
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
+	mCurrentIndex;
+	if(mCurrentIndex >= mImages.length){
+		mCurrentIndex = 0;
+	}
+	
+	var curImg = mImages[mCurrentIndex];
+	document.getElementById("photo").src = curImg.imgPath;
+	document.getElementById("location").innerHTML = "Location: " + curImg.imgLocation;
+	document.getElementById("description").innerHTML = "Description: " + curImg.description;
+	document.getElementById("date").innerHTML = "Date" + curImg.date;
+	
 	console.log('swap photo');
 }
 
