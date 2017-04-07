@@ -163,7 +163,7 @@ $(document).ready( function() {
 		console.log("PREV PHOTO");
 		swapPhotoBack();
 	})
-	$
+	
 	
 });
 
