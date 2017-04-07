@@ -65,7 +65,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'insert_url_here_to_image_json';
+//var mUrl = 'insert_url_here_to_image_json';
 
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
@@ -81,6 +81,8 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
+	
+	$
 	
 });
 
@@ -99,7 +101,7 @@ function GalleryImage(imgLocation, description, date, imgPath) {
 
 
 //XMLHttpRequest
-var mURL = “images.json”;
+var mUrl = “images.json”;
 var mRequest = new XMLHttpRequest();
 mRequest.onreadystatechange = function() {
 	// Do something interesting if file is opened successfully
