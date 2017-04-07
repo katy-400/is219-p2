@@ -85,3 +85,30 @@ function GalleryImage(imgLocation, description, date, imgPath) {
 	this.date = date;
 	this.imgPath = imgPath;
 }
+
+
+//XMLHttpRequest
+var mURL = “images.json”;
+var mRequest = new XMLHttpRequest();
+mRequest.onreadystatechange = function() {
+	// Do something interesting if file is opened successfully
+	if (mRequest.readyState == 4 && mRequest.status == 200) {
+		try {
+			// Let’s try and see if we can parse JSON
+			mJson = JSON.parse(mRequest.responseText);
+			// Let’s print out the JSON; It will likely show as “obj”
+			console.log(mJson);
+			for(var i = 0; i < mJson.images.length; i++){
+				mImages.push(new GalleryImage(mJson.images[1].imgLocation, mJson.images[i].description, mJson.images[i].date, mJson.images[i].imgPath);
+				console.log(mJson.images[i].imgLocation + " " + mJson.images[i].description + " " + mJson.images[i].date + " " + mJson.images[i].imgPath)
+			}
+		} catch(err) {
+			console.log(err.message)
+		}
+	}
+};
+mRequest.open("GET",mUrl, true);
+mRequest.send();
+
+
+
