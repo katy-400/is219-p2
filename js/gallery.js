@@ -140,6 +140,7 @@ $(document).ready( function() {
 		
 		if ($('.moreIndicator').hasClass("rot90")){
 			console.log("has rot90");
+			$('.moreIndicator').addClass("rot270").removeClass("rot90");
 			$('div.details').fadeToggle("fast", function() {
 				$('div.details').slideDown();
 			});
