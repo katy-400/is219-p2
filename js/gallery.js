@@ -151,9 +151,14 @@ $(document).ready( function() {
 	});
 	
 	$('#nextPhoto').click(function(){
-		console.log("NEXT PHOTO")
+		console.log("NEXT PHOTO");
 		swapPhoto();
 	});
+	
+	$('#prevPhoto').click(function(){
+		console.log("PREV PHOTO");
+		swapPhotoBack();
+	})
 	$
 	
 });
