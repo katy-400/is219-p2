@@ -44,9 +44,9 @@ function swapPhoto() {
 	
 	var curImg = mImages[mCurrentIndex];
 	document.getElementById("photo").src = curImg.imgPath;
-	document.getElementByClassName("location")[0].innerHTML = "Location: " + curImg.imgLocation;
-	document.getElementByClassName("description")[0].innerHTML = "Description: " + curImg.description;
-	document.getElementByClassName("date")[0].innerHTML = "Date" + curImg.date;
+	document.getElementsByClassName("location")[0].innerHTML = "Location: " + curImg.imgLocation;
+	document.getElementsByClassName("description")[0].innerHTML = "Description: " + curImg.description;
+	document.getElementsByClassName("date")[0].innerHTML = "Date" + curImg.date;
 	
 	console.log('swap photo');
 }
